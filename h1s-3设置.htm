@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		<meta charset="UTF-8">
+			<title>H1s-3高级设置-by@initea</title>
+		</head>
+		<body>
+		<a href="http://192.168.1.1/webcmcc/gui_device_info.html?password=!@qw34er&username=root">#查看设备信息</a><br>
+		<a href="http://192.168.1.1/webcmcc/firm_upgrade.html?password=!@qw34er&username=root">#固件升级</a><br>
+		<a href="http://192.168.1.1/webcmcc/update.html?password=!@qw34er&username=root">#配置更新</a><br>
+		<a href="http://192.168.1.1/webcmcc/certificate.html?password=!@qw34er&username=root">#证书升级</a><br>
+		<a href="http://192.168.1.1/webcmcc/modeset.html?password=!@qw34er&username=root">#强制注册</a><br>
+		<a href="http://192.168.1.1/webcmcc/telnet.html?password=!@qw34er&username=root">#TELNET设置</a><br><br>
+<button onclick="myFunction()">#完全恢复出场设置</button>
+<p id="gui.restore.factory"></p>
+<script>
+function myFunction(){
+	var x;
+	var r=confirm("确定吗？");
+	if (r==true){
+		location.assign("http://192.168.1.1/webcmcc/gui_restore_factory.html?password=!@qw34er&username=root");
+	}
+	else{
+		x="操作取消";
+	}
+	document.getElementById("demo").innerHTML=x;
+}
+</script>
+		<br><a href="https://github.com/initea">by @initea(Github)</a>
+		<p>注意!!!:完全恢复出厂设置会把所有设置清除，回到注册页面，得重新输Password或Loid或SN!!!</p>
+		<p>打开JavaScript后再使用！</p>
+		</body>
+	</html>
